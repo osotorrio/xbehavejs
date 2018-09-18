@@ -1,0 +1,12 @@
+{
+    "devDependencies": {
+        "chai": "^4.1.2",
+        "mocha": "*"
+    },
+    "//": "mocha is our preference, but you can use any test runner you like",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/osotorrio/xbehavejs.git"
+    },
+    "license": "ISC"
+}
