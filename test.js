@@ -6,6 +6,6 @@ let complex_calculator_feature = require('./complex_calculator.feature');
     complex_calculator_feature.run();
 
     console.log('\n');
-    console.log('Total: ' + xbehave.total + ', Failed: ' + xbehave.failed);
+    console.log('Scenarios: ' + xbehave.scenarios + ', Steps: ' + xbehave.steps + ', Failed: ' + xbehave.failed);
 })();
 

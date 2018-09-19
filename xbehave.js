@@ -1,14 +1,15 @@
 'use strict';
 
 global.xbehave = {
-    total: 0,
+    scenarios: 0,
+    steps: 0,
     failed: 0
 };
 
 global.scenario = (text, action)=> {
     console.log('\n');
     console.log('Scenario: ' + text);
-    xbehave.total++;
+    xbehave.scenarios++;
     action();
 };
 
@@ -34,7 +35,8 @@ global._ = (text, action)=> {
 
 function execute(text, action){
     try {
-        console.log(text);
+        console.log('   ' + text);
+        xbehave.steps++;
         action();
     } catch (exception) {
         xbehave.failed++;
