@@ -1,5 +1,5 @@
-let basicOperationsFeature = require('./basic_operations.feature');
-let complexOperationsFeature = require('./complex_operations.feature');
+let basic_calculator_feature = require('./basic_calculator.feature');
+let complex_calculator_feature = require('./complex_calculator.feature');
 
-basicOperationsFeature.run();
-complexOperationsFeature.run();
+basic_calculator_feature.run();
+complex_calculator_feature.run();

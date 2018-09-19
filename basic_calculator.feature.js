@@ -1,6 +1,6 @@
 'use strict';
 
-let should = require('chai').should();
+let should = require('should');
 let xbehave = require('./xbehave');
 
 module.exports.run = ()=> {
@@ -18,7 +18,7 @@ module.exports.run = ()=> {
         });
 
         then('the result should be 9', ()=>{
-            result.should.be.equal(9);
+            result.should.be.exactly(9);
         });
     });
 
@@ -36,7 +36,7 @@ module.exports.run = ()=> {
         });
 
         then('the result should be 1', ()=>{
-            result.should.be.equal(1);
+            result.should.be.exactly(1);
         });
     });
 };
